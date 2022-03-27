@@ -29,20 +29,61 @@
           data-separator-vertical="---"
         >
           <textarea data-template>
-            # Title Page
+            # RCPCH Audit Engine 
+            ## Epilepsy12
 
-            ### Date
+            ### 2022
 
             -----
             
-            ---
+            # The Epilepsy12 Audit
+            
+            * National Audit of Epilepsy care for the first 12 months following diagnosis
             
             ---
             
+            # Drawbacks with the existing E12 platform
+            
+            * No API, meaning there is no way for other systems to send data automatically
+            * Poor user interface
+            * Many redundant questions and required inputs, which made filling in the audit quite arduous
+            * Correspondingly low response rate
+            * Proprietary software, supplied by external contractor.
+            * Limited options for improvement of UI or additional features eg API
+            
             ---
+            
+            # Screenshot of 'old' E12 platform
             
             -----
-
+            
+            # Application approach
+            
+            (This bit is for the geeks - it's not necessary to understand this stuff to understand the project as a whole.)
+            
+            * [Django](https://www.djangoproject.com/) - a well established, open-source Python-based web framework
+            * An API comes as standard (well, with very minimal additional effort) with Django
+            * Reliable framework in use with Instagram, Spotify, YouTube, Dropbox and Eventbrite [ref](https://djangostars.com/blog/10-popular-sites-made-on-django/)
+            
+            ---
+            
+            # User Interface approach
+            
+            * Using Django's native templating and server-side rendering for the majority of the app
+            * Semantic UI - an open source UI toolkit 
+            * Pared-down UI to streamline data entry
+            * In the future, some sites may be able to pre-fill data fields via the API, saving further user time
+            
+            ---
+            
+            # Data model approach
+            
+            * Detailed review of every field of the existing data model was conducted
+            * Many unused fields removed
+            * Streamlined data model based on real-world requirements for 
+            
+            -----
+            
             ## made with
 
             #### [reveal.js](https://github.com/hakimel/reveal.js)
